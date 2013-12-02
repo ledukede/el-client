@@ -9,5 +9,17 @@
     <string name="login_save">Remember?</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-
+  	<string name="confirmpassword">Confirm Password</string>
+    <string name="firstname">First Name</string>
+    <string name="name">Name</string>
+    <string name="agreeAgb">Agree AGB</string>
+    <string name="submit">Submit</string>
+    <string name="event1">Event Name,Place,Date</string>
+    <string name="event2">Event Name,Place,Date</string>
+    <string name="event3">Event Name,Place,Date</string>
+    <string name="recent">Recent</string>
+    <string name="upcomming">Upcomming</string>
+ 	<string name="participate">Participate</string>
+ 	<string name="showparticipant">Show Participant</string>
+ 	<string name="showcomments">Show Comments</string>
 </resources>

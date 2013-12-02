@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="8"
+    android:orientation="vertical"
+    android:padding="50dp" >
+
+    <Button
+        android:id="@+id/showcomments"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="end"
+        android:layout_row="8"
+        android:hint="@string/showcomments"
+        android:onClick="showcomments" />
+
+    <Button
+        android:id="@+id/showparticipant"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="end"
+        android:layout_row="7"
+        android:hint="@string/showparticipant"
+        android:onClick="showparticipant" />
+
+    <Button
+        android:id="@+id/participate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_row="6"
+        android:hint="@string/participate"
+        android:onClick="participate" />
+
+</GridLayout>
