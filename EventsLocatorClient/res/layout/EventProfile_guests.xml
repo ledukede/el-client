@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="8"
+    android:orientation="vertical"
+    android:padding="50dp" >
+
+
+
+    <TextView
+        android:id="@+id/textparticipants"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"
+        android:layout_row="4"
+        android:text="@string/participants"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    </GridLayout>
