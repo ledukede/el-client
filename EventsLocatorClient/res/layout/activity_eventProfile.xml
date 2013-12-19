@@ -53,13 +53,13 @@
         android:layout_gravity="left|top"
         android:layout_row="6" >
 
-        <TextView
-            android:id="@+id/eventinformation"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="69dp"
-            android:layout_weight="0.08"
-            android:text="@string/eventinformation"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:layout_height="match_parent"
+            android:layout_weight="0.11"
+            android:orientation="vertical" >
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView2"
@@ -69,5 +69,22 @@
             android:src="@drawable/ic_launcher" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="6"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eventinformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="6"
+        android:text="@string/eventinformation"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </GridLayout>
