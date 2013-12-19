@@ -36,26 +36,6 @@
                         android:layout_height="wrap_content"
                         android:text="@string/recent" 
                         android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                    <CheckBox
-                        android:id="@+id/event1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:text="@string/event1" />
-
-                    <CheckBox
-                        android:id="@+id/event2"
-                        android:layout_width="222dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/event2" />
-
-                    <CheckBox
-                        android:id="@+id/event3"
-                        android:layout_width="219dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:text="@string/event3" />
                 </LinearLayout>
 
                 <LinearLayout

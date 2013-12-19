@@ -22,4 +22,13 @@
  	<string name="participate">Participate</string>
  	<string name="showparticipant">Show Participant</string>
  	<string name="showcomments">Show Comments</string>
+ 	<string name="comments">Comments</string>
+ 	<string name="comment1">Comment</string>
+ 	<string name="comment2">Comment</string>
+ 	<string name="comment3">Comment</string>
+ 	<string name="save">Save</string>
+ 	<string name="searchresult">Search Result</string>
+ 	<string name="participants">Participants</string>
+ 	<string name="eventinformation">Event information</string>
+ 		<string name="personaldata">Personal data</string>
 </resources>
