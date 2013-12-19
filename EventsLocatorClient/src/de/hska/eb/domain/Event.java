@@ -7,6 +7,8 @@ import java.util.List;
 
 import javax.json.JsonObject;
 
+import org.json.JSONObject;
+
 import de.hska.eb.util.EventsApp;
 import de.hska.eb.util.JsonMappable;
 
@@ -40,7 +42,7 @@ private Integer eventId;
 	}
 
 	@Override
-	public void fromJsonObject(JsonObject jsonObject) {
+	public void fromJsonObject(JSONObject jsonObject) {
 		// TODO Auto-generated method stub
 		
 	}

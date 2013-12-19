@@ -1,7 +1,12 @@
 package de.hska.eb.domain;
 
 import java.io.Serializable;
+
 import javax.json.JsonObject;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import de.hska.eb.util.EventsApp;
 import de.hska.eb.util.JsonMappable;
 
@@ -25,7 +30,7 @@ public class User implements Serializable, JsonMappable{
 	}
 
 	@Override
-	public void fromJsonObject(JsonObject jsonObject) {
+	public void fromJsonObject(JSONObject jsonObject) throws JSONException {
 		userId = jsonObject.getInt("id");
 		version = jsonObject.getInt("version");
 		email = jsonObject.getString("email");
@@ -33,7 +38,7 @@ public class User implements Serializable, JsonMappable{
 		surName = jsonObject.getString("surname");
 		description = jsonObject.getString("description");
 		pic = new File();
-		pic.fromJsonObject(jsonObject.getJsonObject("pic"));
+		pic.fromJsonObject(jsonObject.getJSONObject("pic"));
 	}
 
 	private Integer userId;

@@ -5,6 +5,8 @@ import java.io.Serializable;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
 
+import org.json.JSONObject;
+
 import de.hska.eb.util.JsonMappable;
 
 public class File implements Serializable, JsonMappable{
@@ -25,7 +27,7 @@ public class File implements Serializable, JsonMappable{
 	}
 
 	@Override
-	public void fromJsonObject(JsonObject jsonObject) {
+	public void fromJsonObject(JSONObject jsonObject) {
 		// TODO Auto-generated method stub
 		
 	}
