@@ -1,4 +1,4 @@
-package de.hska.eb.rest;
+package de.hska.eb.service;
 
 import java.io.IOException;
 import java.util.ArrayList;

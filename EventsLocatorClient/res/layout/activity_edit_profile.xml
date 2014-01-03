@@ -47,7 +47,7 @@
         android:layout_row="3"
         android:ems="10"
         android:hint="@string/firstname"
-        android:inputType="textFirstName"
+        android:inputType="text"
         android:paddingTop="25dp" />
 
     <EditText
@@ -60,7 +60,7 @@
         android:layout_row="4"
         android:ems="10"
         android:hint="@string/name"
-        android:inputType="textName"
+        android:inputType="text"
         android:paddingTop="25dp" />
 
     <Button

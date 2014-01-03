@@ -12,13 +12,13 @@
   	<string name="confirmpassword">Confirm Password</string>
     <string name="firstname">First Name</string>
     <string name="name">Name</string>
-    <string name="agreeAgb">Agree AGB</string>
+    <string name="agreeagb">Agree AGB</string>
     <string name="submit">Submit</string>
     <string name="event1">Event Name,Place,Date</string>
     <string name="event2">Event Name,Place,Date</string>
     <string name="event3">Event Name,Place,Date</string>
     <string name="recent">Recent</string>
-    <string name="upcomming">Upcomming</string>
+    <string name="upcoming">Upcoming</string>
  	<string name="participate">Participate</string>
  	<string name="showparticipant">Show Participant</string>
  	<string name="showcomments">Show Comments</string>
@@ -30,5 +30,9 @@
  	<string name="searchresult">Search Result</string>
  	<string name="participants">Participants</string>
  	<string name="eventinformation">Event information</string>
- 		<string name="personaldata">Personal data</string>
+ 	<string name="personaldata">Personal data</string>
+ 	<string name="wifi">WiFi Connection available</string>
+    <string name="mobile">Mobile Connection available</string>
+    <string name="not_connected">No Network available</string>
+    <string name="mock">ATTENTION: offline test mode</string>
 </resources>

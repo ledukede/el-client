@@ -1,8 +1,8 @@
-package de.hska.eb.eventslocatorclient;
+package de.hska.eb.ui;
 
 import java.util.List;
 
-import android.R;
+import de.hska.eb.eventslocatorclient.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -17,7 +17,7 @@ public class EventProfile extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_eventProfile);
+		setContentView(R.layout.activity_event_profile);
 		
 	}
 	

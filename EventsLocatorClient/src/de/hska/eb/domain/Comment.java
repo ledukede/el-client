@@ -1,43 +1,104 @@
 package de.hska.eb.domain;
 
-import java.util.Date;
+import static de.hska.eb.util.EventsApp.jsonBuilderFactory;
 
-public class Comment {
+import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
+
+
+
+import de.hska.eb.util.InternalShopError;
+import de.hska.eb.util.JsonMappable;
+
+public class Comment implements JsonMappable, Serializable {
+	private static final long serialVersionUID = 8723221309698276152L;
+	private static final String DATE_FORMAT = "yyyy-MM-dd";
 	
-	private Integer commentId;
-	private Commentable commentable;
-	private User user; //poster
-	private Date date;
-	private String message;
-	public Integer getCommentId() {
-		return commentId;
-	}
-	public void setCommentId(Integer commentId) {
-		this.commentId = commentId;
-	}
-	public Commentable getCommentable() {
-		return commentable;
-	}
-	public void setCommentable(Commentable commentable) {
-		this.commentable = commentable;
-	}
-	public User getUser() {
-		return user;
-	}
-	public void setUser(User user) {
-		this.user = user;
-	}
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
-	}
-	public String getMessage() {
-		return message;
-	}
-	public void setMessage(String message) {
-		this.message = message;
+	public Long id;
+	public String userUri; //poster
+	public Date date;
+	public String message;
+	
+	private JsonObjectBuilder getJsonObjectBuilder() {
+		return jsonBuilderFactory.createObjectBuilder()
+								 .add("commentId", id)
+								 .add("userUri", userUri)
+								 .add("date", new SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).format(date))
+								 .add("message", message);
 	}
 	
+	@Override
+	public JsonObject toJsonObject() {
+		return getJsonObjectBuilder().build();
+	}
+
+	@Override
+	public void fromJsonObject(JsonObject jsonObject) {
+		id = Long.valueOf(jsonObject.getJsonNumber("commentId").longValue());
+		userUri = jsonObject.getString("userUri");
+		try {
+			date = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).parse(jsonObject.getString("date"));
+		}
+		catch (ParseException e) {
+			throw new InternalShopError(e.getMessage(), e);
+		}
+		message = jsonObject.getString("message");
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((date == null) ? 0 : date.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((message == null) ? 0 : message.hashCode());
+		result = prime * result + ((userUri == null) ? 0 : userUri.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Comment other = (Comment) obj;
+		if (date == null) {
+			if (other.date != null)
+				return false;
+		} else if (!date.equals(other.date))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (message == null) {
+			if (other.message != null)
+				return false;
+		} else if (!message.equals(other.message))
+			return false;
+		if (userUri == null) {
+			if (other.userUri != null)
+				return false;
+		} else if (!userUri.equals(other.userUri))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Comment [id=" + id 
+				+ ", userUri=" + userUri 
+				+ ", date=" + date
+				+ ", message=" + message + "]";
+	}
 }

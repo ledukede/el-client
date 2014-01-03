@@ -37,7 +37,7 @@
                         android:id="@+id/textupcomming"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/upcomming" 
+                        android:text="@string/upcoming" 
                         android:textAppearance="?android:attr/textAppearanceLarge" />
             <CheckBox
                         android:id="@+id/event1"
