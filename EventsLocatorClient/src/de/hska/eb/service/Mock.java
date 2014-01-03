@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 import android.util.Log;
 import de.hska.eb.util.EventsApp;
-import de.hska.eb.util.InternalShopError;
+import de.hska.eb.util.InternalEventslocatorError;
 
 final class Mock {
 	private static final String LOG_TAG = Mock.class.getSimpleName();
@@ -25,7 +25,7 @@ final class Mock {
 			}
 		}
 		catch (IOException e) {
-			throw new InternalShopError(e.getMessage(), e);
+			throw new InternalEventslocatorError(e.getMessage(), e);
 		}
 		finally {
 			if (reader != null) {

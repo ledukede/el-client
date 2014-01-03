@@ -14,7 +14,7 @@ import javax.json.JsonObjectBuilder;
 
 
 
-import de.hska.eb.util.InternalShopError;
+import de.hska.eb.util.InternalEventslocatorError;
 import de.hska.eb.util.JsonMappable;
 
 public class Event implements Serializable, JsonMappable{
@@ -68,7 +68,7 @@ public class Event implements Serializable, JsonMappable{
 			created = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).parse(jsonObject.getString("created"));
 		}
 		catch (ParseException e) {
-			throw new InternalShopError(e.getMessage(), e);
+			throw new InternalEventslocatorError(e.getMessage(), e);
 		}
 		voting = jsonObject.getInt("voting");
 		createrUri = jsonObject.getString("createrUri");

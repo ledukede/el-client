@@ -13,7 +13,7 @@ import javax.json.JsonObjectBuilder;
 
 
 
-import de.hska.eb.util.InternalShopError;
+import de.hska.eb.util.InternalEventslocatorError;
 import de.hska.eb.util.JsonMappable;
 
 public class Comment implements JsonMappable, Serializable {
@@ -46,7 +46,7 @@ public class Comment implements JsonMappable, Serializable {
 			date = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).parse(jsonObject.getString("date"));
 		}
 		catch (ParseException e) {
-			throw new InternalShopError(e.getMessage(), e);
+			throw new InternalEventslocatorError(e.getMessage(), e);
 		}
 		message = jsonObject.getString("message");
 	}

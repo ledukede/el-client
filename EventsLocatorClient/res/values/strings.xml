@@ -35,4 +35,22 @@
     <string name="mobile">Mobile Connection available</string>
     <string name="not_connected">No Network available</string>
     <string name="mock">ATTENTION: offline test mode</string>
+    <string name="connection_data_prefs">Configuration of the connection to the web wervice</string>
+    <string name="protocol_title">Http(s) Protocol</string>
+    <string name="protocol_summary">Http or https as protocol for the web wervice</string>
+    <string name="host_title">Host</string>
+    <string name="host_summary">Host or ip address for the web service, e.g. 10.0.2.2</string>
+    <string name="port_title">Port Number</string>
+    <string name="port_summary">Port number for the web service, e.g. 80 or 8080</string>
+    <string name="path_title">Path</string>
+    <string name="path_summary">Path for the web service, e.g. /friendslocator/rest</string>
+    <string name="timeout_title">Timeout for server access</string>
+    <string name="timeout_summary">Timeout in seconds</string>
+    <string name="username_title">Username</string>
+    <string name="username_summary">Username for RESTful Web Service</string>
+    <string name="password_title">Password</string>
+    <string name="password_summary">Password for RESTful Web Service</string>
+    <string name="mock_pref">Configuration of mock objects</string>
+    <string name="mock_title">Offline test mode</string>
+    <string name="mock_summary">Instead of RESTful Web Service</string>
 </resources>
