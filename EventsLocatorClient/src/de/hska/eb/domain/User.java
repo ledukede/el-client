@@ -1,6 +1,6 @@
 package de.hska.eb.domain;
 
-import static de.hska.eb.util.EventsApp.jsonBuilderFactory;
+import static de.hska.eb.EventsApp.jsonBuilderFactory;
 
 import java.io.Serializable;
 
@@ -12,16 +12,25 @@ import de.hska.eb.util.JsonMappable;
 public class User implements Serializable, JsonMappable{
 	private static final long serialVersionUID = 8697665641814551004L;
 	
-	public Long id;
-	public int version;
+	public Long id = null;
+	public int version  = 0;
 	public String email;
 	public String password;
-	public String description;
+	public String description = "xxx";
 	public String name;
-	public String picUri;
-	public String eventsUri;
-	public String commentsUri;
+	public String picUri = null;
+	public String eventsUri = null;
+	public String commentsUri = null;
 	public String surname;
+	
+	public User() {}
+	
+	public User(String email, String password, String name, String surname) {
+		this.email = email;
+		this.password = password;
+		this.name = name;
+		this.surname = name;
+	}
 
 	private JsonObjectBuilder getJsonObjectBuilder() {
 		return jsonBuilderFactory

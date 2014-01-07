@@ -8,7 +8,7 @@ import static de.hska.eb.util.Constants.TIMEOUT_DEFAULT;
 import static de.hska.eb.util.Constants.PATH_DEFAULT;
 
 
-import de.hska.eb.eventslocatorclient.R;
+import de.hska.eb.R;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;

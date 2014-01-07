@@ -1,0 +1,74 @@
+[
+{
+    "commentId":700,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/500",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":701,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/501",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":702,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/502",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":703,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/501",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":704,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/504",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":711,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/500",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":706,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/501",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":707,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/502",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":708,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/503",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":709,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/504",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":710,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/504",
+    "date":"2013-11-13",
+    "message":"blub"
+},
+    {
+    "commentId":705,
+    "userUri":"http://iwi-w-eb06.hs-karlsruhe.de:8080/friendslocator/rest/users/504",
+    "date":"2013-11-13",
+    "message":"blub"
+}
+]

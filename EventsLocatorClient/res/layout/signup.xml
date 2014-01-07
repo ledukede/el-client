@@ -9,7 +9,7 @@
    
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/signup_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"
@@ -24,7 +24,7 @@
     </EditText>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/signup_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"
@@ -37,7 +37,7 @@
         android:paddingTop="25dp" />
 
     <EditText
-        android:id="@+id/confirmpassword"
+        android:id="@+id/signup_confirmpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"
@@ -46,11 +46,11 @@
         android:layout_row="2"
         android:ems="10"
         android:hint="@string/confirmpassword"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:paddingTop="25dp" />
 
     <EditText
-        android:id="@+id/firstname"
+        android:id="@+id/signup_firstname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"
@@ -63,7 +63,7 @@
         android:paddingTop="25dp" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/signup_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_column="0"
@@ -76,7 +76,7 @@
         android:paddingTop="25dp" />
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/signup_submit"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
         android:onClick="submit" />
 
     <CheckBox
-        android:id="@+id/agreeAgb"
+        android:id="@+id/signup_agreeAgb"
         android:layout_column="0"
         android:layout_gravity="start"
         android:layout_marginBottom="25dp"

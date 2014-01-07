@@ -1,4 +1,4 @@
-package de.hska.eb.util;
+package de.hska.eb;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;

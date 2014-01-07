@@ -1,6 +1,6 @@
 package de.hska.eb.domain;
 
-import static de.hska.eb.util.EventsApp.jsonBuilderFactory;
+import static de.hska.eb.EventsApp.jsonBuilderFactory;
 
 import java.io.Serializable;
 import java.text.ParseException;

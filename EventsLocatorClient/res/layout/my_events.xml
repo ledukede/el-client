@@ -1,0 +1,35 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/my_events"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.main.MyEvents" >
+
+    <TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:ems="10"
+    	android:text="@string/event_upcoming"
+    	android:textSize="@dimen/Line" />
+
+    <FrameLayout
+    	android:id="@+id/my_upcoming_events"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:ems="10"
+    	android:text="@string/event_passed"
+    	android:textSize="@dimen/Line" />
+
+    <FrameLayout
+    	android:id="@+id/my_passed_evens"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

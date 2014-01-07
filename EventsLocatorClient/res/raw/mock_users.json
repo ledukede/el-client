@@ -1,0 +1,14 @@
+{
+    "userId":500,
+    "version":0,
+    "email":"a@ka.de",
+    "password":"aaa",
+    "description":"yeah",
+    "name":"Alpha",
+    "picUri":"http://localhost:8080/friendslocator/rest/users/500/pic",
+    "eventsUri":"http://localhost:8080/friendslocator/rest/users/500/events",
+    "commentableUri":"http://localhost:8080/friendslocator/rest/users/500/comments",
+    "rollen":["ADMIN",
+    "USER"],
+    "surName":"Bbb"
+}

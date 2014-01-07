@@ -4,7 +4,7 @@ import static android.widget.Toast.LENGTH_LONG;
 
 import java.util.concurrent.TimeUnit;
 
-import de.hska.eb.eventslocatorclient.R;
+import de.hska.eb.R;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;

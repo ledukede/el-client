@@ -1,6 +1,6 @@
 package de.hska.eb.service;
 
-import static de.hska.eb.util.EventsApp.jsonReaderFactory;
+import static de.hska.eb.EventsApp.jsonReaderFactory;
 import static de.hska.eb.ui.main.Prefs.host;
 import static de.hska.eb.ui.main.Prefs.password;
 import static de.hska.eb.ui.main.Prefs.path;
