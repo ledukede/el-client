@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent">
-   
-  <!-- Screen Design for Photos -->
-  <TextView android:text="EVENTS HERE"
-            android:padding="15dip"
-            android:textSize="18dip"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"/>
-     
+
+<!-- Screen Design for Photos -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/event_upcoming"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:text="@string/event_upcoming"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.76" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/event_passed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_passed"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="206dp" >
+    </ListView>
+
 </LinearLayout>

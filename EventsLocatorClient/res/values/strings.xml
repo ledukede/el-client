@@ -68,6 +68,6 @@
     <string name="error_http">No (HTTP-)connection to server</string>
     <string name="event_recently">Recently:</string>
     <string name="event_near_by">Near by:</string>
-    <string name="event_upcoming">Upcoming:</string>
+    <string name="event_upcoming">Upcomming:</string>
     <string name="event_passed">Passed:</string>
 </resources>
