@@ -28,17 +28,6 @@
         android:hint="@string/showparticipant"
         android:onClick="showparticipant" />
 
-    <Button
-        android:id="@+id/participate"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
-        android:layout_column="0"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_row="6"
-        android:hint="@string/participate"
-        android:onClick="participate" />
-
     <RatingBar
         android:id="@+id/ratingBar1"
         android:layout_width="135dp"
@@ -63,7 +52,7 @@
                 android:id="@+id/event_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Event Name" />
+                android:text="@string/event_name" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,7 +62,7 @@
                     android:id="@+id/event_place"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Event Ort"
+                    android:text="@string/event_place"
                     android:onClick="onClickPlace"
        				android:clickable="true"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -82,24 +71,32 @@
                     android:id="@+id/event_trennung"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=", "
+                    android:text="@string/komma"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
                 
                 <TextView
                     android:id="@+id/event_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Event Datum"
+                    android:text="@string/event_date"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
 
             </LinearLayout>
 
             <TextView
-                android:id="@+id/eventinformation"
+                android:id="@+id/event_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/eventinformation"
+                android:text="@string/event_description"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <Button
+                android:id="@+id/participate"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="116dp"
+                android:layout_height="32dp"
+                android:hint="@string/participate"
+                android:onClick="participate" />
 
         </LinearLayout>
 
