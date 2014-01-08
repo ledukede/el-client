@@ -13,11 +13,17 @@
     	android:text="@string/event_upcoming"
     	android:textSize="@dimen/Line" />
 
-    <FrameLayout
-    	android:id="@+id/my_upcoming_events"
+    <ScrollView
+    	android:id="@+id/scrollView1"
     	android:layout_width="match_parent"
     	android:layout_height="wrap_content" >
-    </FrameLayout>
+
+        <FrameLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent" >
+        </FrameLayout>
+
+    </ScrollView>
 
     <TextView
     	android:layout_width="match_parent"
@@ -26,10 +32,16 @@
     	android:text="@string/event_passed"
     	android:textSize="@dimen/Line" />
 
-    <FrameLayout
-    	android:id="@+id/my_passed_evens"
+    <ScrollView
+    	android:id="@+id/scrollView2"
     	android:layout_width="match_parent"
     	android:layout_height="wrap_content" >
-    </FrameLayout>
+
+        <FrameLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent" >
+        </FrameLayout>
+
+    </ScrollView>
 
 </LinearLayout>
