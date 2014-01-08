@@ -32,6 +32,7 @@
  	<string name="participants">Participants</string>
  	<string name="event_description">Description</string>
  	<string name="user_description">Description</string>
+ 	<string name="description">Description</string>
  	<string name="user_comments_title">Comments</string>
  	<string name="personaldata">Name,Surname</string>
  	<string name="wifi">WiFi Connection available</string>
