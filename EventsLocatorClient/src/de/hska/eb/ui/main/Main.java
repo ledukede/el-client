@@ -11,6 +11,7 @@ import de.hska.eb.service.EventService.EventServiceBinder;
 import de.hska.eb.service.UserService.UserServiceBinder;
 import de.hska.eb.ui.Login;
 import de.hska.eb.ui.MyEvents;
+import de.hska.eb.ui.Overview;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.ComponentName;
@@ -59,25 +60,27 @@ public class Main extends Activity {
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
-    	super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        
-        Fragment detailsFragment = null;
-        if (username == null || password == null) {
-
-        	detailsFragment = new Login();
-        	
-            Prefs.init(this);
-        }
-        else {
-        	final Context ctx = getCurrentFocus().getContext();
-        	final User user = getUserServiceBinder().getUserByEmail(username, ctx).resultObject;
-        	
-        	final Bundle args = new Bundle(1);
-        	args.putSerializable(USER_LOGGED_IN_KEY, user);
-        	detailsFragment = new MyEvents();
-        	detailsFragment.setArguments(args);
-        }
+//    	super.onCreate(savedInstanceState);
+//        setContentView(R.layout.main);
+//        
+//        Fragment detailsFragment = null;
+//        if (username == null || password == null) {
+//
+//        	detailsFragment = new Login();
+//        	
+//            Prefs.init(this);
+//        }
+//        else {
+//        	final Context ctx = getCurrentFocus().getContext();
+//        	final User user = getUserServiceBinder().getUserByEmail(username, ctx).resultObject;
+//        	
+//        	final Bundle args = new Bundle(1);
+//        	args.putSerializable(USER_LOGGED_IN_KEY, user);
+//        	detailsFragment = new MyEvents();
+//        	detailsFragment.setArguments(args);
+//        }
+		
+		Fragment detailsFragment = null;
 
         getFragmentManager().beginTransaction()
         					       .add(R.id.details, detailsFragment)

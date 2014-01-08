@@ -55,9 +55,9 @@ public class MyEvents extends Fragment {
 		final Fragment passedEvents = new MyEventsItem();
 		passedEvents.setArguments(args);
 		
-		getFragmentManager().beginTransaction()
-							.add(R.id.my_passed_evens, passedEvents)
-							.commit();
+//		getFragmentManager().beginTransaction()
+//							.add(R.id.my_passed_evens, passedEvents)
+//							.commit();
 	}
 
 	private void getUpcomingEvents(View view) {
@@ -72,9 +72,9 @@ public class MyEvents extends Fragment {
 		final Fragment upcomingEvents = new MyEventsItem();
 		upcomingEvents.setArguments(args);
 		
-		getFragmentManager().beginTransaction()
-							.add(R.id.my_upcoming_events, upcomingEvents)
-							.commit();
+//		getFragmentManager().beginTransaction()
+//							.add(R.id.my_upcoming_events, upcomingEvents)
+//							.commit();
 		
 	}
 }
